@@ -1,0 +1,31 @@
+<div class="product-card">
+  <div class="card-img">
+    <img [src]="source" alt=" watch image">
+    <fa-icon [icon]="faHeartCirclePlus" title="Add to Wishlist"></fa-icon>
+  </div>
+  
+  <div class="card-content">
+    <div class="title">
+      <p>{{title}}</p>
+    </div>
+    <div class="description">
+     <p>{{description}}</p>
+    </div>
+    <div class="ratings">
+      <span class="rating-number">4.0</span>
+      <span class="rating-stars">
+        <fa-icon [icon]="faStar"></fa-icon>
+        <fa-icon [icon]="faStar"></fa-icon>
+        <fa-icon [icon]="faStar"></fa-icon>
+        <fa-icon [icon]="faStar"></fa-icon>
+        <fa-icon [icon]="faStar" class="empty-star"></fa-icon>
+      </span>
+      <span class="rating-count">(1,343)</span>
+    </div>
+    <div class="price">
+      <p><sup>&#x20B9;</sup> <span class="price-number">{{ price }}</span> <span><del>&#x20B9; 2,800</del></span> <span class="discount">(81% off)</span></p>
+    </div>
+    <a href="#" class="add-to-cart" title="Add to cart">Add to cart</a>
+  </div>
+  
+</div>

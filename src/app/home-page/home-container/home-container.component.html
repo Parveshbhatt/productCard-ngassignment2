@@ -1,0 +1,10 @@
+<h1>Welcome to ShoppingSite</h1>
+<div class="container">
+  <div *ngFor="let item of products">
+    <app-product-card
+    [title]="item.category"
+    [description]="item.title.slice(0, 55)+((item.title.length>50)?'...':'') "
+    [price]="item.price"
+    ></app-product-card>
+  </div>
+</div>

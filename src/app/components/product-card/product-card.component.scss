@@ -1,0 +1,145 @@
+$grey-background: #e7e4e4dc;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.product-card {
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  height: 530px;
+  width: 300px;
+
+  .card-img {
+    background-color: $grey-background;
+    padding: 1em;
+    width: 100%;
+    height: 65%;
+    margin: 20px auto 0 auto;
+    position: relative;
+
+    img {
+      background-color: $grey-background;
+      width: 100%;
+      height: 100%;
+      padding: 0.3em;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    fa-icon {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      font-size: 1.5rem;
+      color: #cac8c8;
+
+      &:hover {
+        color: rgba(227, 19, 19, 0.805);
+        cursor: pointer;
+      }
+    }
+
+  }
+
+  .card-content {
+    background-color: #fff;
+    height: auto;
+    margin: 1em 1em 0;
+    text-align: center;
+
+    .title {
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+
+    .description {
+      p {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: justify;
+        word-spacing: normal;
+        font-size: 1.1rem;
+
+        &:hover{
+          color: #0e1789d8;
+          cursor: pointer;
+        }
+      }
+      height: 2.5rem;
+    }
+
+    .ratings {
+      margin: 0.7em 0;
+
+      .rating-number {
+        margin-right: 0.5em;
+      }
+
+      .rating-stars {
+        color: goldenrod;
+      }
+
+      .empty-star {
+        color: #dedcdc;
+      }
+
+      .rating-count {
+        margin-left: 0.3em;
+        color: #062851;
+
+        &:hover {
+          color: #c34c07;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .price {
+      margin: 0.7em 0;
+
+      .price-number {
+        font-size: 1.5em;
+        font-weight: 600;
+        color: #000;
+        padding: 0 0.4em 0 0.1em;
+      }
+
+      span {
+        del {
+          color: #505050;
+        }
+      }
+
+      .discount {
+        padding-left: 0.3em;
+      }
+    }
+
+    a.add-to-cart {
+      border: 1.5px solid #2e921a;
+      background-color: #64ed49;
+      padding: 0.2em 1.2em;
+      text-align: center;
+
+      border-radius: 5%;
+      color: #000;
+      font-size: 1.2em;
+      font-weight: 600;
+      text-decoration: none;
+
+      &:hover {
+        background-color: #3dc922;
+        text-decoration: none;
+      }
+    }
+  }
+}
