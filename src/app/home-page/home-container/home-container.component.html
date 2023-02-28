@@ -3,8 +3,12 @@
   <div *ngFor="let item of products">
     <app-product-card
     [title]="item.category"
+
     [description]="item.title.slice(0, 55)+((item.title.length>50)?'...':'') "
     [price]="item.price"
+    [source]="item.image"
+    [ratingRate]="item.rating.rate"
+    [ratingCount]="item.rating.count"
     ></app-product-card>
   </div>
 </div>

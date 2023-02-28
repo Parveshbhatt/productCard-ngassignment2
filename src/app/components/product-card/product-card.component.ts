@@ -12,7 +12,10 @@ export class ProductCardComponent {
   @Input() title:string = "";
   @Input() description:string = "";
   @Input() price:number = 0;
-  source:string = "../../../assets/watch2.jpg";
+  @Input() source:string = "";
+  @Input() ratingRate:number = 0;
+  @Input() ratingCount:number = 0;
+
   faStar = faStar;
   faHeartCirclePlus = faHeartCirclePlus;
 }

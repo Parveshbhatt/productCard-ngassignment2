@@ -12,15 +12,11 @@
      <p>{{description}}</p>
     </div>
     <div class="ratings">
-      <span class="rating-number">4.0</span>
-      <span class="rating-stars">
-        <fa-icon [icon]="faStar"></fa-icon>
-        <fa-icon [icon]="faStar"></fa-icon>
-        <fa-icon [icon]="faStar"></fa-icon>
-        <fa-icon [icon]="faStar"></fa-icon>
-        <fa-icon [icon]="faStar" class="empty-star"></fa-icon>
+      <span class="rating-number">{{ratingRate}}</span>
+      <span class="rating-stars" *ngFor="let star of [1, 2, 3, 4, 5]">
+        <fa-icon [icon]="faStar" [ngStyle]="{color: ratingRate >= star ? 'goldenrod':'#dedcdc'}"></fa-icon>
       </span>
-      <span class="rating-count">(1,343)</span>
+      <span class="rating-count">({{ ratingCount }})</span>
     </div>
     <div class="price">
       <p><sup>&#x20B9;</sup> <span class="price-number">{{ price }}</span> <span><del>&#x20B9; 2,800</del></span> <span class="discount">(81% off)</span></p>
